@@ -13,7 +13,7 @@ namespace prjCustomer
     public partial class Form1 : Form
     {
 
-        private List<CCustomer> listCustomer = new List<CCustomer>();
+        protected List<CCustomer> listCustomer = new List<CCustomer>();
         private int intIndex = 0;
 
         public Form1()

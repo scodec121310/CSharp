@@ -46,6 +46,7 @@
             // 
             // btnLast
             // 
+            this.btnLast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLast.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnLast.Location = new System.Drawing.Point(279, 202);
             this.btnLast.Margin = new System.Windows.Forms.Padding(2);
@@ -58,6 +59,7 @@
             // 
             // btnNext
             // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnNext.Location = new System.Drawing.Point(219, 202);
             this.btnNext.Margin = new System.Windows.Forms.Padding(2);
@@ -94,6 +96,8 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAddress.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtAddress.Location = new System.Drawing.Point(71, 160);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
@@ -114,6 +118,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtEmail.Location = new System.Drawing.Point(71, 128);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
@@ -134,20 +140,24 @@
             // 
             // txtName
             // 
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtName.Location = new System.Drawing.Point(71, 63);
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(132, 29);
+            this.txtName.Size = new System.Drawing.Size(264, 29);
             this.txtName.TabIndex = 65;
             // 
             // txtPhone
             // 
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtPhone.Location = new System.Drawing.Point(71, 96);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(132, 29);
+            this.txtPhone.Size = new System.Drawing.Size(264, 29);
             this.txtPhone.TabIndex = 66;
             // 
             // label2
@@ -174,11 +184,13 @@
             // 
             // txtId
             // 
+            this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtId.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtId.Location = new System.Drawing.Point(71, 31);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(132, 29);
+            this.txtId.Size = new System.Drawing.Size(264, 29);
             this.txtId.TabIndex = 64;
             // 
             // label1
@@ -221,20 +233,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLast;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button btnFirst;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Button btnLast;
+        protected System.Windows.Forms.Button btnNext;
+        protected System.Windows.Forms.Button btnPrevious;
+        protected System.Windows.Forms.Button btnFirst;
+        protected System.Windows.Forms.TextBox txtAddress;
+        protected System.Windows.Forms.Label label5;
+        protected System.Windows.Forms.TextBox txtEmail;
+        protected System.Windows.Forms.Label label4;
+        protected System.Windows.Forms.TextBox txtName;
+        protected System.Windows.Forms.TextBox txtPhone;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.TextBox txtId;
+        protected System.Windows.Forms.Label label1;
+
     }
 }
 
