@@ -22,7 +22,11 @@ namespace prjCustomer
         }
 
 
-
+        protected void moveTo(int intTo)
+        {
+            intIndex = intTo;
+            displayCustomerInfo();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             CCustomer cust = new CCustomer() { id = "001", name = "Marco", phone = "0932214541", email = "marco@gmail.com", address = "高雄市" };

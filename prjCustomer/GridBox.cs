@@ -19,5 +19,10 @@ namespace prjCustomer
         {
             dataGridView1.DataSource = base.listCustomer;
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            base.moveTo(e.RowIndex);
+        }
     }
 }
