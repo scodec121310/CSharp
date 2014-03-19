@@ -14,7 +14,7 @@ namespace prjCustomer
     {
 
         private List<CCustomer> listCustomer = new List<CCustomer>();
-        private int intIndex=0;
+        private int intIndex = 0;
 
         public Form1()
         {
@@ -25,7 +25,7 @@ namespace prjCustomer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            CCustomer cust = new CCustomer() { id="001",name="Marco",phone="0932214541",email="marco@gmail.com",address="高雄市"};
+            CCustomer cust = new CCustomer() { id = "001", name = "Marco", phone = "0932214541", email = "marco@gmail.com", address = "高雄市" };
             listCustomer.Add(cust);
             cust = new CCustomer() { id = "002", name = "Emma", phone = "0968545214", email = "emma@hotmail.com", address = "高雄市" };
             listCustomer.Add(cust);
@@ -40,11 +40,7 @@ namespace prjCustomer
             intIndex++;
             if (intIndex >= listCustomer.Count)
                 intIndex = listCustomer.Count - 1;
-            txtId.Text = listCustomer[intIndex].id;
-            txtName.Text = listCustomer[intIndex].name;
-            txtPhone.Text = listCustomer[intIndex].phone;
-            txtEmail.Text = listCustomer[intIndex].email;
-            txtAddress.Text = listCustomer[intIndex].address;
+            displayCustomerInfo();
         }
 
         private void btnFirst_Click(object sender, EventArgs e)
@@ -58,6 +54,16 @@ namespace prjCustomer
             intIndex = listCustomer.Count - 1;
             displayCustomerInfo();
         }
+
+        private void displayCustomerInfo()
+        {
+            txtId.Text = listCustomer[intIndex].id;
+            txtName.Text = listCustomer[intIndex].name;
+            txtPhone.Text = listCustomer[intIndex].phone;
+            txtEmail.Text = listCustomer[intIndex].email;
+            txtAddress.Text = listCustomer[intIndex].address;
+        }
+
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             intIndex--;
@@ -65,12 +71,6 @@ namespace prjCustomer
                 intIndex = 0;
             displayCustomerInfo();
         }
-        private void displayCustomerInfo()
-        {
-            txtId.Text = listCustomer[intIndex].id;
-            displayCustomerInfo();
-        }
-
 
     }
 }
